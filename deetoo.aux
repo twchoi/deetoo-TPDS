@@ -1,0 +1,210 @@
+\relax 
+\citation{Goth06b}
+\citation{jk:Algorithmic}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
+\newlabel{sec:introduction}{{I}{1}}
+\citation{LCKS02}
+\citation{is:Chord,CAN,bz:Tapestry,pr:Symphony}
+\citation{re:beehive04}
+\citation{psearch}
+\citation{cubit}
+\citation{sword}
+\citation{mercury}
+\citation{maan}
+\newlabel{eq:c_cost}{{3}{2}}
+\newlabel{eq:q_cost}{{4}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Works}{2}}
+\newlabel{sec:related_works}{{II}{2}}
+\citation{kazaa}
+\citation{JohnstoneSM05}
+\citation{Guo04,Guo05,SMZ03}
+\citation{JiangGZW08}
+\citation{alph:powerlaw01}
+\citation{CohenS02,LCKS02}
+\citation{Cooper05}
+\citation{zs:popularity06}
+\citation{ns:percolation}
+\citation{LiuHZ04}
+\citation{Naor05}
+\@writefile{toc}{\contentsline {section}{\numberline {III}The Deetoo Search Algorithm}{3}}
+\newlabel{sec:model}{{III}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}An unstructured ``hash" table}{3}}
+\newlabel{sec:localtab}{{\unhbox \voidb@x \hbox {III-A}}{3}}
+\citation{is:Chord}
+\citation{jk:Algorithmic}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The caching and querying space.}}{4}}
+\newlabel{fig:space}{{1}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}A Distributed unstructured table}{4}}
+\newlabel{sec:table}{{\unhbox \voidb@x \hbox {III-B}}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Bounded Broadcast}{4}}
+\newlabel{sec:broadcast}{{\unhbox \voidb@x \hbox {III-C}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Virtual ring 1 for caching.}}{5}}
+\newlabel{fig:cache}{{2}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Virtual ring 2 for querying.}}{5}}
+\newlabel{fig:query}{{3}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The complete searching space.}}{5}}
+\newlabel{fig:combined}{{4}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Bounded Broadcast in range $[x, y]$}}{5}}
+\newlabel{fig:tree}{{5}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Data Insertion and Query}{5}}
+\newlabel{sec:cache}{{\unhbox \voidb@x \hbox {III-D}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-E}}Node Joins, Leaves, and Stabilization}{5}}
+\newlabel{sec:join}{{\unhbox \voidb@x \hbox {III-E}}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces An object(\textit  {o}) is inserted at node \textit  {a}. The message is routed to a node(\textit  {n}) in the region for the bounded broadcast.}}{6}}
+\newlabel{fig:cache1}{{6}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The bounded broadcast starts at node \textit  {n}.}}{6}}
+\newlabel{fig:cache2}{{7}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces All nodes in the range receive the message.}}{6}}
+\newlabel{fig:cache3}{{8}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces A query for object $o$ is initiated by a node $a^\prime $.}}{6}}
+\newlabel{fig:query1}{{9}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces $n^\prime $ starts bounded broadcasting within $Q$}}{6}}
+\newlabel{fig:query2}{{10}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Finally, $n^\prime $ retrieves an object from a node $n(o)$.}}{6}}
+\newlabel{fig:query3}{{11}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Choosing a position on the ring when a node joins Deetoo.}}{6}}
+\newlabel{fig:join}{{12}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-F}}Estimating Network Size}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Analysis of Deetoo}{7}}
+\newlabel{sec:analysis}{{IV}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Success Probability}{7}}
+\newlabel{sec:suc_prob}{{\unhbox \voidb@x \hbox {IV-A}}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Estimation size distribution. The actual network size is 1,000. The averages are 1430.97 and 1695.95 for caching and querying, respectively. The standard deviations are 1248.56 and 1630.41, respectively. The medians are 1077 and 1144, respectively. Note that the error margin of overestimation is much larger than that of underestimation, which causes the average to be slightly larger than the actual size of network. Network size estimation for cache is more accurate than that for query, because new node's address selection is based on caching address.}}{8}}
+\newlabel{fig:histogram}{{13}{8}}
+\citation{jk:Information,pr:Symphony}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces The probability that a node \textit  {a} has a connection to a node \textit  {r} in the middle(region \textit  {mL}) is defined as $p_{m}$, and $p_m$ is inverse proportional to the distance between \textit  {a} and \textit  {r}.}}{9}}
+\newlabel{fig:search}{{14}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Communication cost}{9}}
+\newlabel{th}{{25}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Search time}{9}}
+\newlabel{sec:search_time}{{\unhbox \voidb@x \hbox {IV-C}}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Stabilization Cost}{9}}
+\newlabel{sec:stabilization_cost}{{\unhbox \voidb@x \hbox {IV-D}}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Simulation Results}{10}}
+\newlabel{sec:simulation}{{V}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Query hit rate is constant in network size $N$, and scales as $1-e^{-\alpha }$.In the legend, ``th" is theory, the other is simulated.}}{10}}
+\newlabel{fig:hitrate}{{15}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Performance Evaluation}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Query miss rate as a function of $\alpha $, this scales as $\qopname  \relax o{exp}(-\alpha )$.}}{10}}
+\newlabel{fig:mishit}{{16}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Query cost scales $O(\sqrt  N)$. ''th" is for the theoretical result, and the other is the simulation result.}}{11}}
+\newlabel{fig:cost}{{17}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Numerical Analysis for Success Probability}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Search time: We see our upper bound is loose, but the search time grows more than $\qopname  \relax o{log}N$, less than $\qopname  \relax o{log}^2 N$.}}{11}}
+\newlabel{fig:time}{{18}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Success Rate decreases slightly as network size grows, while expected success rate stays constant. Estimation of the network size has bigger error margin in bigger networks. The simulation result depends on the estimation distribution.}}{12}}
+\newlabel{fig:anal}{{19}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Robustness}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces State Transition Diagram for each node. Because join time and leave time distribution has same average, the probability that each node is alive at a time t is 0.5.}}{12}}
+\newlabel{fig:markov}{{20}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Success probability remains constant under Churn}}{12}}
+\newlabel{fig:hit_churn}{{21}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Stabilization Cost}}{12}}
+\newlabel{fig:stab_cost}{{22}{12}}
+\citation{brunet}
+\citation{planetlab}
+\citation{ipop}
+\citation{WOW}
+\citation{grid-appliance}
+\citation{socialvpns}
+\citation{jk:Information}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Deetoo Test on Planet-Lab}{13}}
+\newlabel{sec:test}{{VI}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}System Model}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces P2P (Brunet) network overview}}{13}}
+\newlabel{fig:brunet}{{23}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Brunet-Network Topology}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Network Size Estimation}{13}}
+\citation{hadoop}
+\citation{google_mapreduce}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}}MapReduce-Based Cache/Query System}{14}}
+\newlabel{sec:plab_mapreduce}{{\unhbox \voidb@x \hbox {VI-D}}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces MapReduce function modules for query system}}{14}}
+\newlabel{fig:mapreduce}{{24}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Simple example of map-reduce tree}}{14}}
+\newlabel{fig:mapreduce_tree}{{25}{14}}
+\citation{is:Chord}
+\citation{CAN}
+\citation{pastry}
+\citation{to:deetoo10}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}1}P2P network module}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}2}MapReduce core module}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}3}Generating a tree module}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}4}Mapping module}{15}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces CacheMap}}{15}}
+\newlabel{alg:cmap}{{1}{15}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces QueryMap}}{15}}
+\newlabel{alg:qmap}{{2}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}5}Reducing module}{15}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces CacheReduce}}{16}}
+\newlabel{alg:creduce}{{3}{16}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces QueryReduce}}{16}}
+\newlabel{alg:qreduce}{{4}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Experimental Environment}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}}Evaluation and Results}{16}}
+\newlabel{plab:result}{{\unhbox \voidb@x \hbox {VII-A}}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}1}Network Size Estimation}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Estimated Network Size}}{16}}
+\newlabel{fig:e_net_size}{{26}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}2}Query Success Probability}{16}}
+\citation{to:deetoo10}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Query Success Probability}}{17}}
+\newlabel{fig:plab_hit}{{27}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}3}Latency}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}4}Communication Cost}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Measured Latency}}{17}}
+\newlabel{fig:latency}{{28}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Total bytes transferred for each query}}{17}}
+\newlabel{fig:plab_cost}{{29}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}5}Replication vs. Success Probability}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}6}Load Balancing}{17}}
+\bibstyle{IEEEtran}
+\bibdata{thesis_twchoi}
+\bibcite{Goth06b}{1}
+\bibcite{jk:Algorithmic}{2}
+\bibcite{LCKS02}{3}
+\bibcite{is:Chord}{4}
+\bibcite{CAN}{5}
+\bibcite{bz:Tapestry}{6}
+\bibcite{pr:Symphony}{7}
+\bibcite{re:beehive04}{8}
+\bibcite{psearch}{9}
+\bibcite{cubit}{10}
+\bibcite{sword}{11}
+\bibcite{mercury}{12}
+\bibcite{maan}{13}
+\bibcite{kazaa}{14}
+\bibcite{JohnstoneSM05}{15}
+\bibcite{Guo04}{16}
+\bibcite{Guo05}{17}
+\bibcite{SMZ03}{18}
+\bibcite{JiangGZW08}{19}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Communication Cost for Caching vs. Query Success Probability}}{18}}
+\newlabel{fig:plab_cost_hit}{{30}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion and Future Work}{18}}
+\newlabel{sec:conclusion}{{VIII}{18}}
+\@writefile{toc}{\contentsline {section}{References}{18}}
+\bibcite{alph:powerlaw01}{20}
+\bibcite{CohenS02}{21}
+\bibcite{Cooper05}{22}
+\bibcite{zs:popularity06}{23}
+\bibcite{ns:percolation}{24}
+\bibcite{LiuHZ04}{25}
+\bibcite{Naor05}{26}
+\bibcite{jk:Information}{27}
+\bibcite{brunet}{28}
+\bibcite{planetlab}{29}
+\bibcite{ipop}{30}
+\bibcite{WOW}{31}
+\bibcite{grid-appliance}{32}
+\bibcite{socialvpns}{33}
+\bibcite{hadoop}{34}
+\bibcite{google_mapreduce}{35}
+\bibcite{pastry}{36}
+\bibcite{to:deetoo10}{37}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Load distribution: originally 220 objects were cached over the entire network. }}{19}}
+\newlabel{fig:loadbal_hist}{{31}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces The number of Cached Objects per node: 220 objects are cached over the entire network.}}{19}}
+\newlabel{fig:loadbal_pn}{{32}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Load Balancing}}{19}}
+\newlabel{fig:plab_loadbal}{{33}{19}}
